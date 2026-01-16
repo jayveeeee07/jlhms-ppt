@@ -229,7 +229,7 @@
             font-size: 24px;
         }
 
-        /* Team Grid */
+        /* Team Grid - FIXED BLACK TEXT */
         .team-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -244,12 +244,34 @@
             text-align: center;
             border: 2px solid #e9ecef;
             transition: all 0.3s ease;
+            color: black !important; /* FORCE BLACK TEXT */
+        }
+
+        .team-member h4 {
+            color: #1e3799 !important;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+
+        .team-member p {
+            color: #666 !important;
+            font-size: 14px;
+            font-style: italic;
         }
 
         .team-member:hover {
             transform: translateY(-5px);
             border-color: #4a69bd;
             box-shadow: 0 10px 20px rgba(74, 105, 189, 0.1);
+        }
+
+        /* FIX for Slide 1 text colors */
+        .slide[data-slide="1"] .team-member,
+        .slide[data-slide="1"] .team-member h4,
+        .slide[data-slide="1"] .team-member p,
+        .slide[data-slide="1"] .content-box h3,
+        .slide[data-slide="1"] .content-box h2 {
+            color: black !important;
         }
 
         /* Flowchart Styles */
@@ -372,7 +394,6 @@
         /* Slide-specific backgrounds */
         .slide[data-slide="1"] {
             background: linear-gradient(135deg, #1e3799, #4a69bd);
-            color: white;
         }
 
         .slide[data-slide="1"] .slide-title,
@@ -382,7 +403,7 @@
         }
 
         .slide[data-slide="1"] .content-box {
-            background: rgba(255, 255, 255, 0.1);
+            background: white !important; /* Changed from semi-transparent to solid white */
             border-left-color: #f6b93b;
         }
 
@@ -490,54 +511,54 @@
 
             <!-- Slides Container -->
             <div class="slide-container">
-                <!-- SLIDE 1: Title Slide -->
+                <!-- SLIDE 1: Title Slide - WITH BLACK TEXT FOR TEAM NAMES -->
                 <div class="slide active" data-slide="1">
                     <h1 class="slide-title">JL LAPAZ HARDWARE MANAGEMENT SYSTEM</h1>
                     <h2 class="slide-subtitle">Sitio/Purok Dumanig, Brgy. Upper Mainit, Malungon, Sarangani Province</h2>
                     
                     <div class="content-box">
-                        <h3 style="color: white; margin-bottom: 25px; text-align: center; font-size: 24px;">PRESENTED BY</h3>
+                        <h3 style="color: #1e3799; margin-bottom: 25px; text-align: center; font-size: 24px;">PRESENTED BY</h3>
                         
                         <div class="team-grid">
                             <div class="team-member">
                                 <h4>Jayvee Caringal</h4>
-                                <p>Project Lead</p>
+                                <p></p>
                             </div>
                             <div class="team-member">
                                 <h4>Princess Loraine Padilla</h4>
-                                <p>Co-Lead</p>
+                                <p></p>
                             </div>
                             <div class="team-member">
                                 <h4>Christian Lasponia</h4>
-                                <p>Technical Lead</p>
+                                <p></p>
                             </div>
                             <div class="team-member">
                                 <h4>Mar Jhon Luyao</h4>
-                                <p>Database Specialist</p>
+                                <p></p>
                             </div>
                             <div class="team-member">
                                 <h4>Arianne Shane Pales</h4>
-                                <p>UI/UX Designer</p>
+                                <p></p>
                             </div>
                             <div class="team-member">
                                 <h4>Jenny Rose Indab</h4>
-                                <p>QA Lead</p>
+                                <p></p>
                             </div>
                             <div class="team-member">
                                 <h4>Dexie Jay Jolosjos</h4>
-                                <p>Business Analyst</p>
+                                <p></p>
                             </div>
                             <div class="team-member">
                                 <h4>Lenie Mariano</h4>
-                                <p>Documentation</p>
+                                <p></p>
                             </div>
                             <div class="team-member">
                                 <h4>Karl Jay Balolo</h4>
-                                <p>Developer</p>
+                                <p></p>
                             </div>
                             <div class="team-member">
                                 <h4>Cyrel Caballero</h4>
-                                <p>Developer</p>
+                                <p></p>
                             </div>
                             <div class="team-member">
                                 <h4>Michael Senope</h4>
@@ -545,12 +566,12 @@
                             </div>
                             <div class="team-member">
                                 <h4>Shaina Gean Bayawan</h4>
-                                <p>Tester</p>
+                                <p></p>
                             </div>
                         </div>
                         
-                        <div style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 2px solid rgba(255,255,255,0.2);">
-                            <h3 style="color: white; margin-bottom: 10px;">CAPSTONE PROJECT PRESENTATION</h3>
+                        <div style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 2px solid #e9ecef;">
+                            <h3 style="color: #1e3799; margin-bottom: 10px;">CAPSTONE PROJECT PRESENTATION</h3>
                             <h2 style="color: #f6b93b; font-size: 28px;">JANUARY 2026</h2>
                         </div>
                     </div>
